@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kolorowe Kwadraty</title>
+    <style>
+      body {
+        background-color: thistle;
+      }
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 330px;
+        gap: 10px;
+        margin: 20px auto;
+      }
+      .square {
+        width: 100px;
+        height: 100px;
+      }
+      .square-1 {
+        background-color: fuchsia;
+      }
+      .square-2 {
+        background-color: coral;
+      }
+      .square-3 {
+        background-color: lightgreen;
+      }
+      .square-4 {
+        background-color: lightgoldenrodyellow;
+      }
+      .square-5 {
+        background-color: lightseagreen;
+      }
+      .image {
+        background-image: url("nekokoneko.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="square square-1"></div>
+      <div class="square square-2"></div>
+      <div class="square square-3 image"></div>
+      <div class="square square-4"></div>
+      <div class="square square-5"></div>
+    </div>
+  </body>
+</html>
