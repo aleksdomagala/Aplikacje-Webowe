@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moja Podróż do Japonii</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="#home"><i class="fas fa-home"></i></a>
+      </div>
+      <div class="nav-links">
+        <a href="#about">O Mnie</a>
+        <a href="#travel">Podróż</a>
+        <a href="#gallery">Galeria</a>
+        <a href="#contact">Kontakt</a>
+      </div>
+    </nav>
+
+    <!-- Sekcje strony -->
+    <section id="home" class="mainsection dark">
+      <h1>Moja podróż do Japonii</h1>
+      <p>
+        Zabiorę was w niesamowitą podróż po kraju kwitnącej wiśni jaką odbyłem w
+        2023 roku
+      </p>
+    </section>
+
+    <section id="about" class="section light">
+      <h1>O Mnie</h1>
+      <div class="container">
+        <img src="PXL_20230911_030427414.MP.jpg" alt="Me" width="50%" />
+        <div class="text-content">
+          <p>
+            Nazywam się Aleksander Domagała i jestem studentem 2 roku
+            informatyki na AGH. Moją pasją jest zwiedzanie i kultura dalekiego
+            wschodu (zwłaszcza Japonii). Odwiedziłem wiele różnych krajów m.in :
+            Japonię, Niemcy, Ukrainę, Niderlandy, Austrię, Słowację. Uwielbiam
+            dokumentować wszystkie te podróże. Uważam, że zwiedzanie to świetna
+            forma na poznanie otaczającego nas świata, jak i również zdobywanie
+            cennych doświadczeń.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="travel" class="section dark">
+      <h1>Podróż</h1>
+      <div class="container">
+        <div class="text-content">
+          <p>
+            We wrześniu 2023 roku odbyłem swoją długo planowaną podróż do
+            Japonii. Plan podróży obejmował zobaczenie większości najbardziej
+            popularnych miejsc w tym kraju. Przez pierwsze kilka dni byłem w
+            Tokio, następnie skierowałem się do Kioto i Osaki, by w końcu
+            dotrzeć do Hiroshimy i powrócić do Tokio. Całość podróży trwała 15
+            dni. Wycieczka przebiegła zgodnie z oczekiwaniami, a nawet je
+            przerosła.
+          </p>
+        </div>
+        <div class="japan-flag"><div class="oval"></div></div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section light">
+      <h1>Galeria</h1>
+      <div class="gallery-flex">
+        <div class="gallery-item" onclick="openModal('tokyo')">
+          <h2>Tokio</h2>
+          <img src="images/Tokio/PXL_20230908_085720573.jpg" alt="Tokio" />
+        </div>
+        <div class="gallery-item" onclick="openModal('kyoto')">
+          <h2>Kioto/Osaka</h2>
+          <img src="images/Kyoto/Kiyomizu.jpg" alt="Kioto" />
+        </div>
+        <div class="gallery-item" onclick="openModal('hiroshima')">
+          <h2>Hiroshima</h2>
+          <img
+            src="images/Hiroshima/PXL_20230917_074934675.jpg"
+            alt="Hiroshima"
+          />
+        </div>
+        <div class="gallery-item" onclick="openModal('kanazawa')">
+          <h2>Kanazawa</h2>
+          <img
+            src="images/Kanazawa/PXL_20230913_063426864.jpg"
+            alt="Kanazawa"
+          />
+        </div>
+      </div>
+
+      <div id="modal-tokyo" class="modal">
+        <span class="close" onclick="closeModal('tokyo')">&times;</span>
+        <div class="modal-content">
+          <img src="images/Tokio/IMG_1981.JPG" alt="Tokio 1" />
+          <img src="images/Tokio/IMG_1984.JPG" alt="Tokio 2" />
+          <img src="images/Tokio/main.JPG" alt="Tokio 3" />
+          <img src="images/Tokio/PXL_20230919_043502532.jpg" alt="Tokio 4" />
+        </div>
+      </div>
+
+      <div id="modal-kyoto" class="modal">
+        <span class="close" onclick="closeModal('kyoto')">&times;</span>
+        <div class="modal-content">
+          <img src="images/Kyoto/PXL_20230912_033726063.jpg" alt="Kioto 1" />
+          <img src="images/Kyoto/Golden.jpg" alt="Kioto 2" />
+          <img src="images/Kyoto/Fushimi.JPG" alt="Kioto 3" />
+          <img src="images/Kyoto/Arashiyama.jpg" alt="Kioto 4" />
+        </div>
+      </div>
+
+      <div id="modal-hiroshima" class="modal">
+        <span class="close" onclick="closeModal('hiroshima')">&times;</span>
+        <div class="modal-content">
+          <img
+            src="images/Hiroshima/PXL_20230917_074639010.jpg"
+            alt="Hiroshima 1"
+          />
+          <img
+            src="images/Hiroshima/PXL_20230917_074934675.jpg"
+            alt="Hiroshima 2"
+          />
+          <img
+            src="images/Hiroshima/PXL_20230917_081027796.jpg"
+            alt="Hiroshima 3"
+          />
+          <img
+            src="images/Hiroshima/PXL_20230917_081737041.jpg"
+            alt="Hiroshima 4"
+          />
+        </div>
+      </div>
+
+      <div id="modal-kanazawa" class="modal">
+        <span class="close" onclick="closeModal('kanazawa')">&times;</span>
+        <div class="modal-content">
+          <img
+            src="images/Kanazawa/PXL_20230913_071601059.jpg"
+            alt="Kanazawa 1"
+          />
+          <img
+            src="images/Kanazawa/PXL_20230913_080959436.jpg"
+            alt="Kanazawa 2"
+          />
+          <img
+            src="images/Kanazawa/PXL_20230913_071010903.jpg"
+            alt="Kanazawa 3"
+          />
+          <img src="images/Kanazawa/PXL_20230913_075729514.jpg"Kanazawa 4" />
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section dark">
+      <h1>Kontakt</h1>
+
+      <div class="contact-tiles">
+        <a
+          href="https://www.facebook.com/profile.php?id=100016365667324"
+          target="_blank"
+          class="tile"
+        >
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://github.com/aleksdomagala" target="_blank" class="tile">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="mailto:lordmarek55@gmail.com" target="_blank" class="tile">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+
+      <!-- Formularz kontaktowy -->
+      <form class="contact-form">
+        <label for="email">E-Mail</label>
+        <input
+          type="text"
+          id="email"
+          name="email"
+          placeholder="Wpisz swój e-mail"
+          required
+        />
+
+        <label for="subject">Temat wiadomości</label>
+        <select id="subject" name="subject" required>
+          <option value="" disabled selected>Wybierz temat</option>
+          <option value="opcja1">Opcja 1</option>
+          <option value="opcja2">Opcja 2</option>
+          <option value="opcja3">Opcja 3</option>
+        </select>
+
+        <label for="message">Wiadomość</label>
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Wpisz swoją wiadomość"
+          required
+        ></textarea>
+
+        <input type="submit" value="Wyślij" />
+      </form>
+    </section>
+
+    <footer class="footer">
+      <p>Aleksander Domagała</p>
+    </footer>
+  </body>
+</html>
