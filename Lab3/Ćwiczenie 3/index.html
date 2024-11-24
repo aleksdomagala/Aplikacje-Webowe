@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wyświetlanie danych z API</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="controls">
+    <input type="text" id="filter-input" placeholder="Filtruj po frazie...">
+    <select id="sort-select">
+      <option value="original">Oryginalna kolejność</option>
+      <option value="ascending">Sortuj rosnąco</option>
+      <option value="descending">Sortuj malejąco</option>
+    </select>
+  </div>
+  <table>
+    <thead>
+    <tr>
+      <th>Zdjęcie</th>
+      <th>Tytuł</th>
+      <th>Opis</th>
+    </tr>
+    </thead>
+    <tbody id="data-table"></tbody>
+  </table>
+  <script src="script.js"></script>
+</body>
+</html>
